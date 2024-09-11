@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clove project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="Navbar">
+        <div class="logo"><img src="./assets/clove logo.svg" alt="" /></div>
+        <ul>
+          <li>Treatments</li>
+          <li>Dental Plans</li>
+          <li>Our Doctors</li>
+          <li>Careers</li>
+          <li>Find a Clinic</li>
+        </ul>
+        <button class="appointment-btn" onclick="openAppointmentModal()">
+          <img
+            src="./assets/Book_appointment_logo.svg"
+            alt="no image"
+            class="Appointment-img"
+          />Book Appointment
+        </button>
+        <!-- Appointment Modal -->
+        <div id="appointmentModal" class="appointment-modal">
+          <div class="appointment-modal-content">
+            <span class="close-btn" onclick="closeAppointmentModal()"
+              >&times;</span
+            >
+
+            <h2>It is not done as I have not enough time to complete and do responsive if I got enough time so it can be a masterpiece</h2>
+            <p>
+              Please fill out the form below to book a consultation with Clove
+              Dental.
+            </p>
+
+            <form class="form-consult">
+              <h3>Step 1. Personal Details</h3>
+
+              <label for="full-name">Full Name:</label>
+              <input type="text" id="full-name" name="full-name" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="mobile">Mobile:</label> 
+
+              <input type="tel" id="mobile" name="mobile" required />
+
+              <label for="otp">Enter  OTP:</label>
+              <input type="text" id="otp" name="otp" required />
+              <button type="button" id="verify-otp">Verify</button>
+
+              <button type="submit">Next</button>
+            </form>
+          </div>
+        </div>
+
+        <button class="Help-btn">
+          <img src="./assets/Call_Back_logo.svg" alt="" class="Help-img" />Help
+          ?
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/Hero.svg" alt="Smiling Person" />
+      </div>
+    </section>
+
+    <!-- Clinics Section -->
+    <section class="clinics">
+      <div class="info">
+        <p style="font-weight: 800; font-family: sans-serif">
+          <strong
+            style="font-weight: 800; color: #ea7d28; font-family: sans-serif"
+            >450+</strong
+          >
+          World Class Clinics
+        </p>
+        <p style="font-family: sans-serif">Manned by 1200+ Super Specialists</p>
+      </div>
+      <div class="location">
+        <div class="rating">
+          <img src="./assets/google.svg" alt="" />
+
+          <div class="words">
+            <span class="word">1.7lakh smiles</span>
+            <span class="word">450+ clinics</span>
+          </div>
+        </div>
+        <div class="location-search">
+          <div class="select-box">
+            <span class="selected">Select a City</span>
+            <i class="arrow"></i>
+            <div class="options-container">
+              <div class="option">Ahemdabad</div>
+              <div class="option">Amritsar</div>
+              <div class="option">Bengaluru</div>
+              <div class="option">Chandigarh</div>
+              <div class="option">Chennai</div>
+              <div class="option">Delhi</div>
+            </div>
+          </div>
+
+          <button>Locate nearest Clove clinic</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="service-text">
+        <p>
+          All dental issues from simple cleaning to full mouth rehabilitation
+          under one roof
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-item">
+          <img src="./assets/RCT.svg" alt="Root Canal" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Braces.svg" alt="Braces" />
+        </div>
+
+        <div class="service-item">
+          <img src="./assets/Braces.svg" alt="Teeth Whitening" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Dental Implants.svg" alt="Cosmetic Dentistry" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+        <div class="service-item">
+          <img src="./assets/Bracestooth.svg" alt="Oral Surgery" />
+        </div>
+      </div>
+      <div class="service-search">
+        <img src="./assets/Search.svg" alt="" />
+        <p>Explore Treatments</p>
+        <img src="./assets/Arrow 3.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="consultation-section">
+      <div class="container">
+        <div class="form-container">
+          <h2>Expert Guidance for Healthy Smiles</h2>
+          <p>Contact Now</p>
+          <form>
+            <div class="form-group">
+              <!-- <label for="name">Name</label> -->
+              <input type="text" id="name" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <!-- <label for="mobile">Mobile Number</label> -->
+              <input type="text" id="mobile" placeholder="Mobile Number" />
+            </div>
+            <div class="form-group">
+              <div class="custom-select">
+                <div class="select-box">
+                  <span class="selected">Select Concern</span>
+                  <i class="arrow"></i>
+                </div>
+                <div class="options-container">
+                  <div class="option">Ahemdabad</div>
+                  <div class="option">Amritsar</div>
+                  <div class="option">Bengaluru</div>
+                  <div class="option">Chandigarh</div>
+                  <div class="option">Chennai</div>
+                  <div class="option">Delhi</div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="cta-button">
+              Book A Free Consultation
+            </button>
+          </form>
+        </div>
+
+        <div class="content-container">
+          <div class="safety-protocols">
+            <div>
+              <span>
+                <h2>10x Safety Protocols</h2>
+                <p>Monitored by DORI (Artificial Intelligence System)</p>
+              </span>
+              <a
+                href="#"
+                style="font-size: larger; font-weight: 800; color: #4d2c19"
+                >Learn More →</a
+              >
+            </div>
+
+            <img
+              src="./assets/Untitled design (2) 1 (1).svg"
+              alt="Doctor Image"
+            />
+          </div>
+
+          <div class="info-cards">
+            <div class="doctorcard">
+              <h3>450+ Neighbourhood <br />Clinics Pan India</h3>
+              <img src="./assets/Clinics.svg" alt="" style="width: 50%" />
+              <a href="#">Locate Clinic near you →</a>
+            </div>
+            <div class="doctorcard">
+              <h3>1200+ Expert Doctors</h3>
+              <p>Covering All Specialities</p>
+              <img src="./assets/Group 51324.svg" alt="" style="width: 50%" />
+              <a href="#">Explore Dentists Nearby →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- scroll section -->
+    <div class="card-heading"><p>In their own words</p></div>
+    <div class="card-scroller">
+      <div class="card" data-name="Shubham" data-description="Braces">
+        <img src="./assets/card-scroll-1.svg" alt="Shubham" />
+        <h4>Shubham</h4>
+        <p>Braces</p>
+      </div>
+      <div class="card" data-name="Shubham" data-description="Braces">
+        <img src="./assets/card-scroll-1.svg" alt="Shubham" />
+        <h4>Shubham</h4>
+        <p>Braces</p>
+      </div>
+      <div class="card" data-name="Shubham" data-description="Braces">
+        <img src="./assets/scroll-card-2.svg" alt="Shubham" />
+        <h4>Shubham</h4>
+        <p>Braces</p>
+      </div>
+      <div class="card" data-name="Shubham" data-description="Braces">
+        <img src="./assets/card-scroll-1.svg" alt="Shubham" />
+        <h4>Shubham</h4>
+        <p>Braces</p>
+      </div>
+      <div class="card" data-name="Shubham" data-description="Braces">
+        <img src="./assets/card-scroll-1.svg" alt="Shubham" />
+        <h4>Shubham</h4>
+        <p>Braces</p>
+      </div>
+      <div class="card" data-name="Shubham" data-description="Braces">
+        <img src="./assets/card-scroll-1.svg" alt="Shubham" />
+        <h4>Shubham</h4>
+        <p>Braces</p>
+      </div>
+      <div class="card" data-name="Anjali" data-description="Braces">
+        <img src="./assets/card-scroll-1.svg" alt="Anjali" />
+        <h4>Shubham</h4>
+        <p>Braces</p>
+      </div>
+      <!-- Popup Modal -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <img id="modal-img" src="" alt="" />
+          <h2 id="modal-name"></h2>
+          <p id="modal-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- doctor section -->
+    <section class="doctor">
+      <div class="dental-experience">
+        <div>
+          <h2 style="font-size: 30px; font-weight: 800">
+            Unmatched Dental Excellence by 1200+ Specialists
+          </h2>
+          <ul>
+            <li>
+              <img src="./assets/Frame 52485Team_of_spacialists.svg" alt="" />
+              <p>
+                Team of Specialists <br />
+                75+ Orthodontists
+              </p>
+            </li>
+            <li>
+              <img
+                src="./assets/Frame 52484Leading_wpmen.svg"
+                alt=""
+                style="padding-left: 10px"
+              />
+              <p style="padding-left: 20px">Leading with <br />80% women</p>
+            </li>
+            <li>
+              <img
+                src="./assets/Frame 2609439Award.svg"
+                alt=""
+                style="padding-left: 20px"
+              />
+              <p style="padding-left: 35px">
+                65% MDS <br />
+                Doctors for specialised care
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class=""
+        style="display: flex; flex-direction: column; overflow: hidden"
+      >
+        <div class="card-scroller">
+          <div class="card">
+            <img src="./assets/Rectangle 68rajni.svg" alt="Dr. Suresh Kumar" />
+            <h3>Dr. Suresh Kumar</h3>
+            <p>18+ Years Experience</p>
+          </div>
+          <div class="card">
+            <img src="./assets/Rectangle 68suresh.svg" alt="Dr. Rajni Mary" />
+            <h3>Dr. Rajni Mary</h3>
+            <p>10+ Years Experience</p>
+          </div>
+          <div class="card">
+            <img src="./assets/Rectangle 68rajni.svg" alt="Dr. Suresh Kumar" />
+            <h3>Dr. Suresh Kumar</h3>
+            <p>18+ Years Experience</p>
+          </div>
+          <div class="card">
+            <img src="./assets/Rectangle 68suresh.svg" alt="Dr. Rajni Mary" />
+            <h3>Dr. Rajni Mary</h3>
+            <p>10+ Years Experience</p>
+          </div>
+          <div class="card">
+            <img src="./assets/Rectangle 68rajni.svg" alt="Dr. Suresh Kumar" />
+            <h3>Dr. Suresh Kumar</h3>
+            <p>18+ Years Experience</p>
+          </div>
+        </div>
+
+        <button class="meet-btn">Meet our Doctors</button>
+      </div>
+    </section>
+    <div class="marquee">
+      <span
+        ><img src="./assets/1.5 LHappy_patients.svg" alt="" /><img
+          src="./assets/1.5 L1200_dentists.svg"
+          alt="" /><img src="./assets/1.5 L450_clinincs.svg" alt="" /><img
+          src="./assets/1.5 L1200_dentists.svg"
+          alt="" /><img src="./assets/1.5 LHappy_patients.svg" alt="" /><img
+          src="./assets/1.5 L1200_dentists.svg"
+          alt="" /><img src="./assets/1.5 L450_clinincs.svg" alt="" /><img
+          src="./assets/1.5 L1200_dentists.svg"
+          alt=""
+      /></span>
+    </div>
+
+    <!-- doctor next section -->
+
+    <section class="doctor-next">
+      <div class="card-scroller">
+        <div class="card">
+          <img src="./assets/doctor_next.svg" alt="Dr. Suresh Kumar" />
+        </div>
+        <div class="card">
+          <img src="./assets/doctor_next.svg" alt="Dr. Suresh Kumar" />
+        </div>
+        <div class="card">
+          <img src="./assets/doctor_next.svg" alt="Dr. Suresh Kumar" />
+        </div>
+        <div class="card">
+          <img src="./assets/doctor_next.svg" alt="Dr. Suresh Kumar" />
+        </div>
+        <div class="card">
+          <img src="./assets/doctor_next.svg" alt="Dr. Suresh Kumar" />
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section -->
+    <section class="blog-section">
+      <h2>Journey Through Knowledge: Blog Hub</h2>
+      <div class="tabs">
+        <div class="tab active" onclick="showContent('general-dentistry')">
+          General Dentistry
+        </div>
+        <div class="tab" onclick="showContent('cosmetics-dentistry')">
+          Cosmetics Dentistry
+        </div>
+        <div class="tab" onclick="showContent('crowns-bridges')">
+          Crowns & Bridges
+        </div>
+        <div class="tab" onclick="showContent('nutrition')">Nutrition</div>
+        <div class="tab" onclick="showContent('oral-surgery')">
+          Oral Surgery
+        </div>
+        <div class="tab" onclick="showContent('root-canal')">Root Canal</div>
+        <div class="tab" onclick="showContent('implants-dentures')">
+          Implants & Dentures
+        </div>
+      </div>
+
+      <div id="general-dentistry" class="tab-content active">
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>12th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>12th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>12th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>12th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>12th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>12th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="cosmetics-dentistry" class="tab-content">
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>13th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>13th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>13th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>13th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>13th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./assets/Frame 51911blog-con.svg" alt="Blog Image" />
+          <div class="blog-info">
+            <h3>
+              Dry Sockets Demystified: Understanding the connection to tooth
+              extraction
+            </h3>
+            <p>13th Feb 2024 | 2 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="explore-more">
+        <a href="#">Explore More →</a>
+      </div>
+    </section>
+
+    <!-- Corporate section -->
+
+    <section class="corporate-box">
+      <div class="corporate-section">
+        <div class="corporate-image"></div>
+        <div class="corporate-content">
+          <h2>250+<br /></h2>
+          <h3>Corporate Trust Us</h3>
+
+          <p>Check if your company is one of them & avail exclusive benefits</p>
+          <div class="marquee-logo">
+            <span>
+              <img src="/assets/pngegg 1bataa.svg" alt="Bata" />
+              <img src="./assets/pngegg (1) 1tajlogo.svg" alt="Taj" />
+              <img src="./assets/image 445vardhaman.svg" alt="Wellness" />
+              <img
+                src="./assets/5a393285c488ac6062ac2af9 1lakmelogo.svg"
+                alt="Lakme"
+              />
+              <img src="./assets/image 444marshlogo.svg" alt="Marsh" />
+            </span>
+          </div>
+          <button href="#" class="book-btn">Book Appointment</button>
+          <a href="#" class="register-link">Register your company →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DENTISTRY SECTION -->
+    <section class="dentistry">
+      <div class="dentistry-text">
+        <p>Beyond Dentistry</p>
+        <h3>Mapping Success in every Area</h3>
+      </div>
+
+      <div class="dentistry-grid">
+        <div class="dentistry-item">
+          <img src="./assets/RCT.svg" alt="Root Canal" />
+        </div>
+        <div class="dentistry-item">
+          <img src="./assets/Braces.svg" alt="Braces" />
+        </div>
+
+        <div class="dentistry-item">
+          <img src="./assets/Braces.svg" alt="Teeth Whitening" />
+        </div>
+        <div class="dentistry-item">
+          <img src="./assets/Dental Implants.svg" alt="Cosmetic Dentistry" />
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq-container">
+        <div class="faq-column">
+          <div class="faq-item">
+            <p>Can I choose the dentist on my own for treatment?</p>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-item">
+            <p>Will I get the same doctor each time I visit the same clinic?</p>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-item">
+            <p>
+              How are you able to provide less prices than other dental brands?
+            </p>
+            <span class="faq-toggle">+</span>
+          </div>
+        </div>
+        <div class="faq-column">
+          <div class="faq-item">
+            <p>Can I choose the dentist on my own for treatment?</p>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-item">
+            <p>Will I get the same doctor each time I visit the same clinic?</p>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-item">
+            <p>
+              How are you able to provide less prices than other dental brands?
+            </p>
+            <span class="faq-toggle">+</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Treatments</h4>
+          <ul>
+            <li>Laser Dentistry</li>
+            <li>Dental fillings</li>
+            <li>Root canal Treatment</li>
+            <li>Wisdom Teeth removal</li>
+            <li>Braces & Aligners</li>
+            <li>Clear Aligners</li>
+            <li>Dental Implants</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Locations</li>
+            <li>Book Appointments</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Explore Clove</h4>
+          <ul>
+            <li>Our Team</li>
+            <li>Clinic Overview</li>
+            <li>Testimonials</li>
+            <li>Blogs</li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of service</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+        <div class="social-column">
+          <h4>Connect with Us</h4>
+          <ul class="social-links">
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/Group 51316instalogo (1).svg"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Vectorfacebooklogo.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Group 51317youtubuelogo.svg" alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="./assets/clove logo.svg" alt="Clove Dental" />
+      </div>
+      <div class="footer-credits">
+        <p>
+          All Rights Reserved - 2024, Clove Dental (a brand name of M/s. Star
+          Dental Centre Private Limited)
+        </p>
+      </div>
+    </footer>
+    <section class="chatbot-section">
+      <img src="./assets/chatbot_logo.svg" class="chatbot" alt="Chatbot Logo" />
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
